@@ -1,3 +1,4 @@
+---
 - hosts: test-server
   become: true
   tasks:
@@ -9,6 +10,6 @@
 
   - name: start docker service
     command: sudo systemctl start docker
-    
+
   - name: deploy insureme application
-    command: sudo docker run -itd -p 8081:8080 --name capstone1 ranjana23/capstoneproject:1.0 
+    command: sudo docker run -itd -p 8083:8080 --name insurance3 ranjana23/capstoneproject:1.0
